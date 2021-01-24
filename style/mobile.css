@@ -1,0 +1,10 @@
+@media (max-width:38em) {
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        padding-top: 1rem;
+    }
+}

@@ -90,12 +90,6 @@ span {
     right: 0;
 }
 
-img {
-    width: 5rem;
-    opacity: 0;
-    transition: opacity 1.5s ease-in-out;
-}
-
 .developer {
     height: 50%;
     background-color: #EFEFEF;
