@@ -64,6 +64,7 @@ function openDev() {
 
     devH1.addEventListener('click',()=> {
         devH1.style.transform = 'translateX(-60%)'
+        photoH1.style.transform = 'translateX(60%)'
 
         setTimeout(()=> {
             main.classList.add('main-opacity')
@@ -75,6 +76,7 @@ function openDev() {
         },500)
     })
     photoH1.addEventListener('click',()=> {
+        devH1.style.transform = 'translateX(-60%)'
         photoH1.style.transform = 'translateX(60%)'
 
         setTimeout(()=> {
