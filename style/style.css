@@ -107,15 +107,66 @@ span {
 }
 
 .dev-h1 {
+    position: relative;
     font-family: 'Be Vietnam', sans-serif;
-    padding-bottom: 2rem;
+    margin-bottom: 2rem;
     transform: translateX(-60%);
+    overflow: hidden;
+}
+
+.dev-h1:before {
+    content: '';
+    position: absolute;
+    height: 5px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #EFEFEF;
+    transform: translateX(-101%);
+    transition: transform 1s ease-in-out;
+}
+
+.dev-h1:hover:before {
+    transform: translateX(100%);
+}
+
+.dev-h1:after {
+    content: '';
+    position: absolute;
+    height: 5px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #EFEFEF;
+    transform: translateX(101%);
+    transition: transform 0.5s ease-in 1s;
+}
+
+.dev-h1:hover:after {
+    transform: translateX(0%);
 }
 
 .photo-h1 {
     font-family: 'Playfair Display', serif;
-    padding-top: 2rem;
+    padding: 0 2rem;
+    margin-top: 2rem;
     transform: translateX(60%);
+}
+
+.photo-h1:before {
+    content: '';
+    position: absolute;
+    height: 0%;
+    left: 0;
+    right: 0;
+    bottom: 0;    
+    background: #EFEFEF;    
+    mix-blend-mode: difference;
+    transition: height .4s ease-in-out;
+}
+
+.photo-h1:hover:before {
+    height: 100%;
 }
 
 .h1-opacity {

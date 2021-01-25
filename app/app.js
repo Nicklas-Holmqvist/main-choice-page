@@ -75,6 +75,7 @@ function openDev() {
                 window.open(devPage, "_self")
         },500)
     })
+
     photoH1.addEventListener('click',()=> {
         devH1.style.transform = 'translateX(-60%)'
         photoH1.style.transform = 'translateX(60%)'
