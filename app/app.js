@@ -11,6 +11,7 @@ function addEventListeners() {
     showH1()
     showTop()
     showFooter()
+    openDev()
 }
 
 function showH1() {
@@ -54,3 +55,40 @@ function showFooter() {
         footer.style.opacity ='1'
     },2000)
 }
+
+function openDev() {
+    const devH1 = document.querySelector('.dev-h1')
+    const photoH1 = document.querySelector('.photo-h1')
+    const main = document.querySelector('main')
+    const body = document.querySelector('body')
+
+    devH1.addEventListener('click',()=> {
+        devH1.style.transform = 'translateX(-60%)'
+
+        setTimeout(()=> {
+            main.classList.add('main-opacity')
+        },100)
+
+        setTimeout(()=>{           
+                const devPage = "https://nicklasholmqvist.se/portfolio/utvecklare/index.html"
+                window.open(devPage, "_self")
+        },500)
+    })
+    photoH1.addEventListener('click',()=> {
+        photoH1.style.transform = 'translateX(60%)'
+
+        setTimeout(()=> {
+            main.classList.add('main-opacity')
+            body.style.background = '#151515'
+        },100)
+
+        setTimeout(()=>{           
+                const devPage = "https://nicklasholmqvist.se/portfolio/nicklasfoto/index.html"
+                window.open(devPage, "_self")
+        },500)
+    })
+}
+
+
+
+    

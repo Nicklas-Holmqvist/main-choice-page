@@ -11,6 +11,7 @@ html, body, main {
 
 main {
     position: relative;
+    transition: opacity 1.5s ease-in-out;
 }
 
 h1 {
@@ -20,6 +21,7 @@ h1 {
     color: #EFEFEF;
     mix-blend-mode: difference;
     font-weight: 300;
+    cursor: pointer;
 }
 
 h2, h3 {
@@ -45,10 +47,6 @@ h3 {
 
 p {
     font-family: 'Be Vietnam', sans-serif;
-}
-
-a {
-    text-decoration: none;
 }
 
 span {
@@ -81,6 +79,10 @@ span {
 
 .row {
     flex-direction: row;
+}
+
+.main-opacity {
+    animation: 1s main-opacity forwards;
 }
 
 .top-section {
@@ -156,5 +158,18 @@ i {
 
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes main-opacity {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
     }
 }
