@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --white-color: #EFEFEF;
+    --dark-color: #1b1b1b;
+}
+
 html, body, main {
     height: 100%;
     overflow: hidden;
@@ -18,7 +23,7 @@ h1 {
     font-size: 6rem;
     opacity: 0;
     transition: opacity, transform 1.5s ease-in-out;
-    color: #EFEFEF;
+    color:var(--white-color);
     mix-blend-mode: difference;
     font-weight: 300;
     cursor: pointer;
@@ -31,7 +36,7 @@ h1 {
 h2, h3 {
     font-family: 'Be Vietnam', sans-serif;
     transition: opacity 0.7s ease-in-out;
-    color: #EFEFEF;
+    color:var(--white-color);
     mix-blend-mode: difference;
 }
 
@@ -98,12 +103,12 @@ span {
 
 .developer {
     height: 50%;
-    background-color: #EFEFEF;
+    background-color:var(--white-color);
 }
 
 .photographer {
     height: 50%;
-    background-color: #1b1b1b;
+    background-color:var(--dark-color);
 }
 
 .dev-h1 {
@@ -121,7 +126,7 @@ span {
     left: 0;
     right: 0;
     bottom: 0;
-    background: #EFEFEF;
+    background:var(--white-color);
     transform: translateX(-101%);
     transition: transform 1s ease-in-out;
 }
@@ -137,7 +142,7 @@ span {
     left: 0;
     right: 0;
     bottom: 0;
-    background: #EFEFEF;
+    background:var(--white-color);
     transform: translateX(101%);
     transition: transform 0.5s ease-in 1s;
 }
@@ -160,7 +165,7 @@ span {
     left: 0;
     right: 0;
     bottom: 0;    
-    background: #EFEFEF;    
+    background:var(--white-color);    
     mix-blend-mode: difference;
     transition: height .4s ease-in-out;
 }
@@ -199,7 +204,7 @@ footer p {
 i {
     padding: 0 .5rem;
     font-size: 1rem;
-    color: #EFEFEF;
+    color:var(--white-color);
 }
 
 
